@@ -7,5 +7,5 @@ test('test', async ({ page }) => {
   await page.getByRole('combobox', { name: 'Search' }).fill('g');
   await page.getByText('gemini ai').click();
   await expect(page.locator('b')).toContainText('About this page');
-
+//ok1
 });
