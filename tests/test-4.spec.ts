@@ -8,4 +8,5 @@ test('test', async ({ page }) => {
   await page.getByText('gemini ai').click();
   await expect(page.locator('b')).toContainText('About this page');
 //ok1
+// ok
 });
