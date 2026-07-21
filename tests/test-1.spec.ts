@@ -8,4 +8,5 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Email or phone' }).fill('ak');
   await page.getByRole('button', { name: 'Next' }).click();
   await page.getByRole('link', { name: 'Try again' }).click();
+  // ok
 });
