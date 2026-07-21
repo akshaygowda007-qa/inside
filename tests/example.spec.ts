@@ -97,7 +97,9 @@ export class DataHelper {
     return XLSX.utils.sheet_to_json(sheet);
   }
 }
-
+await page.getByRole('combobox', { name: 'Search' }).click();
+await page.getByText('paypal newsSee more').click();
+await expect(page.getByText('About this page')).toBeVisible();
 
 
 
